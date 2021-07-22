@@ -24,4 +24,6 @@ public class NotePadController {
     public ResponseEntity<NotePad> save(@RequestBody NotePad notepad){
         return new ResponseEntity<>(notePadService.save(notepad), HttpStatus.CREATED);
     }
+
+
 }

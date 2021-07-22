@@ -6,7 +6,7 @@ public class NotePad {
     private int noteId;
     private String title;
     private String note;
-    private DateFormat datenote;
+    private String datenote;
 
     public int getNoteId() {
         return noteId;
@@ -14,6 +14,14 @@ public class NotePad {
 
     public void setNoteId(int noteId) {
         this.noteId = noteId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getNote() {
@@ -24,17 +32,11 @@ public class NotePad {
         this.note = note;
     }
 
-    public DateFormat getDatenote() {
+    public String getDatenote() {
         return datenote;
     }
 
-    public void setDatenote(DateFormat datenote) {
+    public void setDatenote(String datenote) {
         this.datenote = datenote;
-    }
-    public String getTitle(){
-        return title;
-    }
-    public void setTitle(String title){
-        this.title = title;
     }
 }

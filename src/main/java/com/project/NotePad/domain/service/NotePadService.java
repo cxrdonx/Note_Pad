@@ -12,7 +12,6 @@ public class NotePadService {
 
   @Autowired
     private NoteRepository noteRepository;
-
     public List<NotePad> getAll(){
         return noteRepository.getAll();
     }
