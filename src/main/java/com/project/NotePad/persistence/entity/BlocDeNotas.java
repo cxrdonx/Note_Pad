@@ -1,6 +1,7 @@
 package com.project.NotePad.persistence.entity;
 
 import javax.persistence.*;
+import java.sql.Blob;
 import java.text.DateFormat;
 
 @Entity
@@ -13,6 +14,8 @@ public class BlocDeNotas {
     private String titulo;
     private String nota;
     private String fecha;
+    @Lob
+    private byte[] imagen;
 
     public Integer getIdnota() {
         return idnota;
@@ -44,5 +47,12 @@ public class BlocDeNotas {
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
+    }
+
+    public byte[] getImagen(){
+        return imagen;
+    }
+    public void setImagen(byte[] imagen){
+        this.imagen = imagen;
     }
 }

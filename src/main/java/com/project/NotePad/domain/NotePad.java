@@ -7,7 +7,7 @@ public class NotePad {
     private String title;
     private String note;
     private String datenote;
-
+    private byte[] image;
     public int getNoteId() {
         return noteId;
     }
@@ -38,5 +38,13 @@ public class NotePad {
 
     public void setDatenote(String datenote) {
         this.datenote = datenote;
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
     }
 }

@@ -13,7 +13,6 @@ import java.util.Optional;
 
 @Repository
 public class BlocDeNotasRepository implements NoteRepository {
-
     @Autowired
     private BlocCrudRepository blocCrudRepository;
 
@@ -23,7 +22,7 @@ public class BlocDeNotasRepository implements NoteRepository {
 
     @Override
     public List<NotePad> getAll() {
-            return mapper.toNotePads((List<BlocDeNotas>) blocCrudRepository.findAll());
+        return mapper.toNotePads((List<BlocDeNotas>) blocCrudRepository.findAll());
     }
 
     @Override
